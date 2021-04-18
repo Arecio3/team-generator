@@ -30,7 +30,7 @@ const createManager = () => {
             name: "id",
             message: chalk.green("Enter manager's id"),
             validate: data => {
-                if (data.match("")){
+                if (data !== ""){
                     return true
                 }
                 return "Please enter a valid id"
@@ -52,7 +52,7 @@ const createManager = () => {
             name: "officeNumber",
             message: chalk.green("Enter manager's office number"),
             validate: data => {
-                if (data.match("")){
+                if (data !== ""){
                     return true
                 }
                 return "Please enter a office number"
