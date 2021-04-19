@@ -5,9 +5,10 @@ const Employee = require("./lib/Employees");
 const Engineer = require("./lib/Engineer");
 const inquirer = require("Inquirer");
 const fs = require("fs");
-const chalk = require("chalk")
+const chalk = require("chalk");
 const { log } = require("console");
 const teamArray = [];
+const createHTML = require("./createHtml");
 
 
 // function to create questions for manager 
@@ -75,6 +76,12 @@ const createManager = () => {
         teamArray.push(manager);
         let keepGoing = answers.newMember !== 'I do not need to add anyone else';
         let memberType = answers.newMember;
+
+        if(!keepGoing) {
+            makeFile();
+            return;
+        }
+
         while (keepGoing) {
             if (memberType === 'Engineer') {
                 createEngineer(); 
@@ -89,6 +96,7 @@ const createManager = () => {
         }
         console.log(teamArray);
     })
+    
 }
 
 
@@ -156,6 +164,12 @@ const createIntern = () => {
         teamArray.push(intern)
         let keepGoing = answers.newMember !== 'I do not need to add anyone else';
         let memberType = answers.newMember;
+
+        if(!keepGoing) {
+            makeFile();
+            return;
+        }
+
         while (keepGoing) {
             if (memberType === 'Engineer') {
                 createEngineer(); 
@@ -238,6 +252,12 @@ const createEngineer = () => {
         teamArray.push(engineer);
         let keepGoing = answers.newMember !== 'I do not need to add anyone else';
         let memberType = answers.newMember;
+
+        if(!keepGoing) {
+            makeFile();
+            return;
+        }
+
         while (keepGoing) {
             if (memberType === 'Engineer') {
                 createEngineer(); 
@@ -255,3 +275,10 @@ const createEngineer = () => {
 }
 
 createManager();
+
+const makeFile = () => {
+
+    fs.writeFile('index.html', createHTML(teamArray), (err) => err ? console.error(error) : console.log("Made the index.html!!"));
+}
+
+// init();
