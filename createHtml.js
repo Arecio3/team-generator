@@ -12,7 +12,7 @@ let html = `<!DOCTYPE html>
 <body>
     
     <header>
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid text-center">
             <div class="container">
               <h1 class="display-4">Team Generator</h1>
             </div>
@@ -50,7 +50,7 @@ const managerCard = (manager) => {
      <div class="card-body">
        <h5 class="card-title">${manager.getName()}</h5>
        <h6 class="card-subtitle mb-2">${manager.getRole()} <i class="fas fa-coffee"> </i></h6>
-       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <p class="card-text"></p>
        
          <ul class="list-group list-group-flush">
            <li class="list-group-item">Id: ${manager.getId()}</li>
@@ -69,7 +69,7 @@ const engineerCard = (engineer) => {
      <div class="card-body">
        <h5 class="card-title">${engineer.getName()}</h5>
        <h6 class="card-subtitle mb-2">${engineer.getRole()} <i class="fas fa-tools"> </i></h6>
-       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <p class="card-text"></p>
          <ul class="list-group list-group-flush">
            <li class="list-group-item">Id: ${engineer.getId()}</li>
            <li class="list-group-item">Email: ${engineer.getEmail()}</li>
@@ -87,7 +87,7 @@ const internCard = (intern) => {
      <div class="card-body">
        <h5 class="card-title">${intern.getName()}</h5>
        <h6 class="card-subtitle mb-2">${intern.getRole()} <i class="fas fa-user-graduate"> </i></h6>
-       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <p class="card-text"></p>
        
          <ul class="list-group list-group-flush">
            <li class="list-group-item">Id: ${intern.getId()}</li>
