@@ -11,6 +11,8 @@
   
   # Description 
 A back end application that generates a card for each of your team members.
+
+<img src = "assets/screenshots/Screen Shot 2021-04-20 at 3.30.02 PM.png"></img>
   
   # Installation
    **npm i**
