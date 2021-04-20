@@ -16,7 +16,8 @@ describe("Engineer", () => {
     })
 
     test ("Can get github username with getGitHub function", () => {
-        const engineer = new Engineer("Arecio3");
-        expect(engineer.getGitHub()).toBe(engineer.gitHub);
+        const engineer = new Engineer("Arecio", 123,"arecio@gmail.com", "Arecio3");
+        console.log(engineer.gitHub);
+        expect(engineer.getGitHub()).toEqual(engineer.gitHub);
     })
 })

@@ -26,13 +26,15 @@ describe("Employee", () => {
 
     // makes sure the getId function is returning id
     test ("can get id with getId function", () => {
-        const employee = new Employee(123);
+        const employee = new Employee("Arecio", 123, "arecio@gmail.com");
+        console.log(employee);
         expect(employee.getId()).toBe(employee.id);
     })
 
     // makes sure getEmail function is returning email
     test ("can get email with getEmail function", () => {
-        const employee = new Employee("arecio@gmail.com");
+        const employee = new Employee("Arecio", 123, "arecio@gmail.com");
+        console.log(employee);
         expect(employee.getEmail()).toBe(employee.email);
     })
 

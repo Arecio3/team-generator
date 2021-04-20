@@ -15,7 +15,7 @@ describe("Intern", () => {
     })
 
     test ("Can get school with getSchool function", () => {
-        const intern = new Intern("UCF");
+        const intern = new Intern("Arecio", 123, "arecio@gmail.com","UCF");
         expect(intern.getSchool()).toBe(intern.school);
     })
 })

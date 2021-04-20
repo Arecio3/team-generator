@@ -156,7 +156,8 @@ const createIntern = () => {
         },
 
     ]).then((answers) => {
-        // makes the new manager wiht passed in choices
+        // makes the new manager with passed in choices
+        console.log(answers);
         const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
         // pushes new manager to team array
        

@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: gray;
+}
+
+.jumbotron {
+    background-color: salmon;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10%;
+}
+
+.card {
+    background-color: royalblue;
+    width: 25%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex: 1 0 300px;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.card-subtitle {
+    font-weight: bolder;
+}
+
+main ul {
+    background-color: black;
+}
+
