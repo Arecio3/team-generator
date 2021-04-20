@@ -37,3 +37,6 @@ A back end application that generates a card for each of your team members.
 
   # Video
   [Video](https://drive.google.com/file/d/1f01HLDL8NAVJUQ0Ju-xyEgoFgm0meTZx/view)
+  
+  # Live Site
+  [Site](https://arecio3.github.io/team-generator/)
